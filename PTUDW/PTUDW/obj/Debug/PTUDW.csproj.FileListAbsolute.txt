@@ -77,3 +77,10 @@ D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\PTUDW\obj\Debug\PTUDW.csproj.C
 D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\PTUDW\obj\Debug\PTUDW.csproj.CopyComplete
 D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\PTUDW\obj\Debug\PTUDW.dll
 D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\PTUDW\obj\Debug\PTUDW.pdb
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\PTUDW\bin\EntityFramework.dll
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\PTUDW\bin\EntityFramework.SqlServer.dll
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\PTUDW\bin\EntityFramework.xml
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\PTUDW\bin\EntityFramework.SqlServer.xml
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\PTUDW\bin\MyClass.dll
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\PTUDW\bin\MyClass.pdb
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\PTUDW\bin\MyClass.dll.config

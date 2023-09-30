@@ -1,0 +1,12 @@
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\bin\Debug\MyClass.dll.config
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\bin\Debug\MyClass.dll
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\bin\Debug\MyClass.pdb
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\bin\Debug\EntityFramework.dll
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\bin\Debug\EntityFramework.SqlServer.dll
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\bin\Debug\EntityFramework.xml
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\bin\Debug\EntityFramework.SqlServer.xml
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.csproj.AssemblyReference.cache
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.csproj.CoreCompileInputs.cache
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.csproj.CopyComplete
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.dll
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.pdb
