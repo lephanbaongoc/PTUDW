@@ -13,18 +13,25 @@ namespace MyClass.Model
     {
         [Key]
         public int Id { get; set; }
+
         public int CatId { get; set; }
 
         [Required]
         public string Name { get; set; }
+
         public string Supplier { get; set; }
+
         public string Slug { get; set; }
 
         [Required]
         public string Detail { get; set; }
+
         public string Image { get; set; }
+
         public decimal Price { get; set; }
+
         public decimal SalePrice { get; set;}
+
         public int Qty { get; set; }
 
         [Required]
@@ -32,10 +39,15 @@ namespace MyClass.Model
 
         [Required]
         public string MetaKey { get; set; }
+
         public int CreateBy { get; set; }
+
         public DateTime CreateAt { get; set; }
+
         public int UpdateBy { get; set; }
+
         public DateTime UpdateAt { get; set; }
+
         public int Status { get; set; }
 
     }

@@ -13,13 +13,18 @@ namespace MyClass.Model
     {
         [Key]
         public int Id { get; set; }
+
         public int? TopId { get; set; }
 
         [Required]
         public string Title { get; set; }
+
         public string Slug { get; set; }
+
         public string Detail { get; set; }
+
         public string Image { get; set; }
+
         public string PostType { get; set; }
 
         [Required]
@@ -27,10 +32,16 @@ namespace MyClass.Model
 
         [Required]
         public string MetaKey { get; set; }
+
         public int CreateBy { get; set; }
+
         public DateTime CreateAt { get; set; }
+
         public int UpdateBy { get; set; }
+
         public DateTime UpdateAt { get; set; }
+
         public int Status { get; set; }
+
     }
 }

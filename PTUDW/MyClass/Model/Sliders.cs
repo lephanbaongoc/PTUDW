@@ -16,8 +16,11 @@ namespace MyClass.Model
 
         [Required]
         public string Name { get; set; }
+
         public string URL { get; set; }
+
         public string Image { get; set; }
+
         public int Order { get; set; }
 
         [Required]
@@ -27,9 +30,13 @@ namespace MyClass.Model
         public string Detail { get; set; }
 
         public int CreateBy { get; set; }
+
         public DateTime CreateAt { get; set; }
+
         public int? UpdateBy { get; set; }
+
         public DateTime? UpdateAt { get; set; }
+
         public int Status { get; set; }
 
     }

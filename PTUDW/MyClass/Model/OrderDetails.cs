@@ -13,9 +13,14 @@ namespace MyClass.Model
     {
         [Key]
         public int Id { get; set; }
+
         public int OrderID { get; set; }
+
         public int ProductID { get; set; }
+
         public decimal Price { get; set; }
+
         public decimal Amount { get; set; }
+
     }
 }
