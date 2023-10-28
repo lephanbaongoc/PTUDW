@@ -18,7 +18,7 @@ namespace MyClass.DAO
             return db.Categories.ToList();
         }
 
-        //Index chi voi staus 1,2        
+        //Index chi voi status 1,2        
         public List<Categories> getList(string status = "ALL")//status 0,1,2
         {
             List<Categories> list = null;
