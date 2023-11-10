@@ -53,10 +53,10 @@ namespace MyClass.Model
         [Display(Name = "Ngày tạo")]
         public DateTime CreateAt { get; set; }
 
-        [Display(Name = "Người tạo")]
+        [Display(Name = "Người cập nhật")]
         public int UpdateBy { get; set; }
 
-        [Display(Name = "Ngày tạo")]
+        [Display(Name = "Ngày cập nhật")]
         public DateTime UpdateAt { get; set; }
 
         [Display(Name = "Trạng thái")]

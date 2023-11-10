@@ -73,7 +73,7 @@ namespace MyClass.DAO
         public int Delete(Categories row)
         {
             db.Categories.Remove(row);
-            return db.SaveChanges();
+            return db.SaveChanges();//thành công => return 1
         }
     }
 }
