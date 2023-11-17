@@ -56,8 +56,8 @@ namespace PTUDW.Areas.Admin.Controllers
         // GET: Admin/Product/Create
         public ActionResult Create()
         {
-            ViewBag.ListCatID = new SelectList(categoriesDAO.getList("Index"), "CatId", "Name");//sai CatId - truy vấn bằng Categories
-            ViewBag.ListSupID = new SelectList(suppliersDAO.getList("Index"), "SupplierId", "Name");// sai SupplierId truy vấn bằng Suppliers
+            ViewBag.ListCatID = new SelectList(categoriesDAO.getList("Index"), "Id", "Name");//sai CatId - truy vấn bằng Categories
+            ViewBag.ListSupID = new SelectList(suppliersDAO.getList("Index"), "Id", "Name");// sai SupplierId truy vấn bằng Suppliers
             //Dùng để lựa chọn từ danh sách droplist như bảng Categories: ParentID và Suppliers: ParentID
             return View();
         }
@@ -94,7 +94,7 @@ namespace PTUDW.Areas.Admin.Controllers
                         string imgName = slug + img.FileName.Substring(img.FileName.LastIndexOf("."));
                         products.Img = imgName;
                         //upload hinh
-                        string PathDir = "~/Public/img/supplier";
+                        string PathDir = "~/Public/img/product";
                         string PathFile = Path.Combine(Server.MapPath(PathDir), imgName);
                         img.SaveAs(PathFile);
                     }
@@ -106,8 +106,8 @@ namespace PTUDW.Areas.Admin.Controllers
                 TempData["message"] = new XMessage("success", "Tạo mới sản phẩm thành công");
                 return RedirectToAction("Index");
             }
-            ViewBag.ListCatID = new SelectList(categoriesDAO.getList("Index"), "CatId", "Name");//sai CatId - truy vấn bằng Categories
-            ViewBag.ListSupID = new SelectList(suppliersDAO.getList("Index"), "SupplierId", "Name");// sai SupplierId truy vấn bằng Suppliers
+            ViewBag.ListCatID = new SelectList(categoriesDAO.getList("Index"), "Id", "Name");//sai CatId - truy vấn bằng Categories
+            ViewBag.ListSupID = new SelectList(suppliersDAO.getList("Index"), "Id", "Name");// sai SupplierId truy vấn bằng Suppliers
             return View(products);
         }
 
@@ -129,6 +129,8 @@ namespace PTUDW.Areas.Admin.Controllers
                 TempData["message"] = new XMessage("danger", "Không tồn tại sản phẩm");
                 return RedirectToAction("Index");
             }
+            ViewBag.ListCatID = new SelectList(categoriesDAO.getList("Index"), "Id", "Name");//sai CatId - truy vấn bằng Categories
+            ViewBag.ListSupID = new SelectList(suppliersDAO.getList("Index"), "Id", "Name");// sai SupplierId truy vấn bằng Suppliers
             return View(products);
         }
 
@@ -146,7 +148,7 @@ namespace PTUDW.Areas.Admin.Controllers
 
                 //xu ly cho phan upload hình ảnh
                 var img = Request.Files["img"];//lay thong tin file
-                string PathDir = "~/Public/img/supplier";
+                string PathDir = "~/Public/img/product";
                 if (img.ContentLength != 0)
                 {
                     //Xu ly cho muc xoa hinh anh
@@ -178,6 +180,8 @@ namespace PTUDW.Areas.Admin.Controllers
                 TempData["message"] = new XMessage("success", "Cập nhật sản phẩm thành công");
                 return RedirectToAction("Index");
             }
+            ViewBag.ListCatID = new SelectList(categoriesDAO.getList("Index"), "Id", "Name");//sai CatId - truy vấn bằng Categories
+            ViewBag.ListSupID = new SelectList(suppliersDAO.getList("Index"), "Id", "Name");// sai SupplierId truy vấn bằng Suppliers
             return View(products);
         }
 
@@ -210,7 +214,18 @@ namespace PTUDW.Areas.Admin.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Products products = productsDAO.getRow(id);
-            productsDAO.Delete(products);
+            //xu ly cho phan upload hình ảnh
+            var img = Request.Files["img"];//lay thong tin file
+            string PathDir = "~/Public/img/product";
+            if (productsDAO.Delete(products) == 1)
+            {
+                //Xu ly cho muc xoa hinh anh
+                if (products.Img != null)
+                {
+                    string DelPath = Path.Combine(Server.MapPath(PathDir), products.Img);
+                    System.IO.File.Delete(DelPath);
+                }
+            }
             //Thông báo xóa mẫu tin thành công 
             TempData["message"] = new XMessage("success", "Xóa sản phẩm thành công");
             return RedirectToAction("Trash");
