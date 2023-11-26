@@ -10,3 +10,5 @@ D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.cspr
 D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.csproj.CopyComplete
 D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.dll
 D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.pdb
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.Properties.Resources.resources
+D:\Aki\NTU\K5\PhatTrienUngDungWEB\git\PTUDW\PTUDW\MyClass\obj\Debug\MyClass.csproj.GenerateResource.cache
